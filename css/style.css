@@ -2,36 +2,39 @@ body {
   margin:0px;
   padding:0px;
   background:#fff;
-  }
+}
 
 article {
   width:66.66667%;
   min-width:320px;
   position:relative;
-  padding-top:20px;
-  padding-bottom:33.3333%;
-  }
+}
+
 section {
   padding:40px;
-  margin-left:40px;
   position:relative;
   transition:background 500ms, color 500ms;
   -moz-transition:background 500ms, color 500ms;
   -webkit-transition:background 500ms, color 500ms;
-  }
+}
+
 section,
 section a {
-  color:#888;
-  color:rgba(128,128,128,0);
+  color:#eeeeee;
+  background-color: #222222;
+  opacity: 0.8;
   text-decoration:none;
-  text-shadow:rgba(64,64,64,1) 0px 0px 4px;
-  }
+}
+
 section.active {
-  background:#222;
-  color:#eee;
-  }
+  background-color: #222222;
+  color:#eeeeee;
+  opacity: 0.95;
+}
+
 section.active a { color:#eee; }
 section.active small { color:#aaa; }
+
 h1 { font-family: 'Arvo', Georgia, Times, serif; font-size:2em; line-height:1em; }
 h2 { font-family: 'Arvo', Georgia, Times, serif; font-size:1.3333em; }
 h1,h2 { margin:0px 0px 10px; }
@@ -44,19 +47,24 @@ p { font-family: 'PT Sans', Helvetica, Arial, sans-serif; margin:0px; }
   font-size:10px;
   text-transform:uppercase;
   padding:5px 10px;
-  }
+}
+
 .colophon {
   display:block;
   margin-top:10px;
-  }
+}
 
-/*.cover:before {
-  content:'';
-  display:block;
-  width:120px; height:120px;
-  margin:0px auto 20px;
-  }
-.cover.active:before { background:url(arch_icon.png) no-repeat; }*/
+.card .content {
+  padding: 150px 0;
+}
+
+#cover, #fin {
+  text-align: center;
+}
+
+#fin .content ul li {
+  list-style: none;
+}
 
 #pane {
   position:fixed;
@@ -64,7 +72,8 @@ p { font-family: 'PT Sans', Helvetica, Arial, sans-serif; margin:0px; }
   bottom:0px;
   right:0px;
   width:66.6666%;
-  }
+}
+
 #map  {
   position:absolute;
   top:0px;
@@ -74,14 +83,15 @@ p { font-family: 'PT Sans', Helvetica, Arial, sans-serif; margin:0px; }
   transition:opacity 250ms;
   -moz-transition:opacity 250ms;
   -webkit-transition:opacity 250ms;
-  }
+}
 
 .spot {
   width:100px;
   height:100px;
   margin:-50px 0px 0px -15px;
   position:absolute;
-  }
+}
+
 .spot-cover { display:none; }
 .spot-mojave { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
 .spot-mojave.active { background:url(../images/hiker.png) no-repeat; }
