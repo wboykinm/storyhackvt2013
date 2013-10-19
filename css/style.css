@@ -1,7 +1,138 @@
 body {
-  color: red;
-}
+  margin:0px;
+  padding:0px;
+  background:#fff;
+  }
 
-.wrapper {
-  100%;
-}
+article {
+  width:66.66667%;
+  min-width:320px;
+  position:relative;
+  padding-top:20px;
+  padding-bottom:33.3333%;
+  }
+section {
+  padding:40px;
+  margin-left:40px;
+  position:relative;
+  transition:background 500ms, color 500ms;
+  -moz-transition:background 500ms, color 500ms;
+  -webkit-transition:background 500ms, color 500ms;
+  }
+section,
+section a {
+  color:#888;
+  color:rgba(128,128,128,0);
+  text-decoration:none;
+  text-shadow:rgba(64,64,64,1) 0px 0px 4px;
+  }
+section.active {
+  background:#222;
+  color:#eee;
+  }
+section.active a { color:#eee; }
+section.active small { color:#aaa; }
+h1 { font-family: 'Arvo', Georgia, Times, serif; font-size:2em; line-height:1em; }
+h2 { font-family: 'Arvo', Georgia, Times, serif; font-size:1.3333em; }
+h1,h2 { margin:0px 0px 10px; }
+h4 { font-family: 'PT Sans', Helvetica, Arial, sans-serif; margin:0px; font-size:0.8em;}
+p { font-family: 'PT Sans', Helvetica, Arial, sans-serif; margin:0px; }
+
+.scroll {
+  position:absolute;
+  right:0px; bottom:0px;
+  font-size:10px;
+  text-transform:uppercase;
+  padding:5px 10px;
+  }
+.colophon {
+  display:block;
+  margin-top:10px;
+  }
+
+/*.cover:before {
+  content:'';
+  display:block;
+  width:120px; height:120px;
+  margin:0px auto 20px;
+  }
+.cover.active:before { background:url(arch_icon.png) no-repeat; }*/
+
+#pane {
+  position:fixed;
+  top:0px;
+  bottom:0px;
+  right:0px;
+  width:66.6666%;
+  }
+#map  {
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  width:300%;
+  left:-70%;
+  transition:opacity 250ms;
+  -moz-transition:opacity 250ms;
+  -webkit-transition:opacity 250ms;
+  }
+
+.spot {
+  width:100px;
+  height:100px;
+  margin:-50px 0px 0px -15px;
+  position:absolute;
+  }
+.spot-cover { display:none; }
+.spot-mojave { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
+.spot-mojave.active { background:url(../images/hiker.png) no-repeat; }
+.spot-meadows { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
+.spot-meadows.active { background:url(../images/hiker.png) no-repeat; }
+.spot-mirror { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
+.spot-mirror.active { background:url(../images/hiker.png) no-repeat; }
+.spot-cassel { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
+.spot-cassel.active { background:url(../images/hiker.png) no-repeat; }
+.spot-mccloud { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
+.spot-mccloud.active { background:url(../images/hiker.png) no-repeat; }
+.spot-crater { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
+.spot-crater.active { background:url(../images/hiker.png) no-repeat; }
+.spot-goatrocks { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
+.spot-goatrocks.active { background:url(../images/hiker.png) no-repeat; }
+
+/* Distinguish the "cover page" visually other sections. */
+body.section-0 #map { opacity:0.5; }
+
+@media (max-width:640px) {
+  body {
+    font-size:12px;
+    line-height:16px;
+    }
+  article {
+    width:100%;
+    min-width:100%;
+    padding-top:0px;
+    padding-bottom:200%;
+    }
+  section {
+    text-shadow:none;
+    margin-left:0px;
+    padding:30px;
+    }
+  section.active {
+    position:fixed;
+    top:0px; left:0px; right:0px;
+    }
+  #pane { width:100%; }
+  #map  {
+    bottom:0%;
+    left:0%;
+    width:100%;
+    height:150%;
+    }
+  }
+
+@media (min-width:1280px) {
+  body {
+    font-size:18px;
+    line-height:24px;
+    }
+  }
