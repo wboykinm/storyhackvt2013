@@ -1,29 +1,3 @@
-var browser_width = window.innerWidth ||document.documentElement.clientWidth || document.body.clientWidth;
-var browser_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
-$(document).ready( function(){
-  var section_padding = parseInt($(".cover").css("padding"));
-
-  $( window ).resize(function() {
-    browser_width = window.innerWidth ||document.documentElement.clientWidth || document.body.clientWidth;
-    browser_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    setCoverSize();
-  });
-
-  setCoverSize();
-
-  function setCoverSize(){
-    var cover_content_height = $(".cover .content").height();
-    var fin_content_height = $(".fin .content").height();
-    $(".cover").css("height", browser_height - section_padding * 2);
-    $(".cover").css("width", browser_width - section_padding * 2);
-    $(".fin").css("height", browser_height - section_padding * 2);
-    $(".fin").css("width", browser_width - section_padding * 2);
-    $(".cover .content").css("padding", browser_height / 2 - cover_content_height / 2 + "px 0");
-    $(".fin .content").css("padding", browser_height / 2 - fin_content_height + "px 0");
-  }
-});
-
 var geojson = [
   { "geometry": { "type": "Point", "coordinates": [-120.4657, 40.5695] },
     "properties": { "id": "cover", "zoom": 5 } },
@@ -44,6 +18,7 @@ var geojson = [
   { "geometry": { "type": "Point", "coordinates": [-120.4657, 40.5695] },
   "properties": { "id": "fin", "zoom": 5 } },
 ];
+
 var tiles = mapbox.layer().tilejson({
   tiles: [ "https://s3.amazonaws.com/geosprocket-basemap/{z}/{x}/{y}.png" ]
 });
@@ -137,3 +112,28 @@ window.onscroll = _(function() {
 
 // Set map to first section.
 setActive(0, false);
+
+$(document).ready( function(){
+  var browser_width = window.innerWidth ||document.documentElement.clientWidth || document.body.clientWidth;
+  var browser_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  var section_padding = parseInt($(".cover").css("padding"));
+
+  $( window ).resize(function() {
+    browser_width = window.innerWidth ||document.documentElement.clientWidth || document.body.clientWidth;
+    browser_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    setCoverSize();
+  });
+
+  setCoverSize();
+
+  function setCoverSize(){
+    var cover_content_height = $(".cover .content").height();
+    var fin_content_height = $(".fin .content").height();
+    $(".cover").css("height", browser_height - section_padding * 2);
+    $(".cover").css("width", browser_width - section_padding * 2);
+    $(".fin").css("height", browser_height - section_padding * 2);
+    $(".fin").css("width", browser_width - section_padding * 2);
+    $(".cover .content").css("padding", browser_height / 2 - cover_content_height / 2 + "px 0");
+    $(".fin .content").css("padding", browser_height / 2 - fin_content_height + "px 0");
+  }
+});

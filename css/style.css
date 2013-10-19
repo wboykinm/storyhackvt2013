@@ -1,7 +1,102 @@
+/***** setup the fonts *****/
+
+@font-face {
+  font-family: 'HeadlineOne-HPLHS';
+  src: url('../fonts/HeadlOneHPLHS.eot');
+}
+
+@font-face {
+  font-family: 'HeadlineOne-HPLHS';
+  src: url('../fonts/HeadlOneHPLHS.woff') format('woff'),
+  url('../fonts/HeadlOneHPLHS.svg#HeadlineOne-HPLHS') format('svg');
+}
+
+@font-face {
+  font-family: 'HeadlineTwo-HPLHS';
+  src: url('../fonts/HeadlTwoHPLHS.eot');
+}
+
+@font-face {
+  font-family: 'HeadlineTwo-HPLHS';
+  src: url('../fonts/HeadlTwoHPLHS.woff') format('woff'),
+  url('../fonts/HeadlTwoHPLHS.svg#HeadlineTwo-HPLHS') format('svg');
+}
+
+@font-face {
+  font-family: 'OldstyleItalic-HPLHS';
+  src: url('../fonts/OldstItaHPLHS.eot');
+}
+
+@font-face {
+  font-family: 'OldstyleItalic-HPLHS';
+  src: url('../fonts/OldstItaHPLHS.woff') format('woff'),
+  url('../fonts/OldstItaHPLHS.svg#OldstyleItalic-HPLHS') format('svg');
+}
+
+@font-face {
+  font-family: 'OldStyle1-HPLHS';
+  src: url('../fonts/OldStyHPLHS.eot');
+}
+
+@font-face {
+  font-family: 'OldStyle1-HPLHS';
+  src: url('../fonts/OldStyHPLHS.woff') format('woff'),
+  url('../fonts/OldStyHPLHS.svg#OldStyle1-HPLHS') format('svg');
+}
+
+@font-face {
+  font-family: 'LyonsItalic';
+  src: url('../fonts/LyonsIta.eot');
+}
+
+@font-face {
+  font-family: 'LyonsItalic';
+  src: url('../fonts/LyonsIta.woff') format('woff'),
+  url('../fonts/LyonsIta.svg#LyonsItalic') format('svg');
+}
+
+@font-face {
+  font-family: 'BelizioBold';
+  src: url('../fonts/BelizBol.eot');
+}
+
+@font-face {
+  font-family: 'BelizioBold';
+  src: url('../fonts/BelizBol.woff') format('woff'),
+  url('../fonts/BelizBol.svg#BelizioBold') format('svg');
+}
+
+@font-face {
+  font-family: 'Telegram-HPLHS';
+  src: url('../fonts/TelegHPLHS.eot');
+}
+
+@font-face {
+  font-family: 'Telegram-HPLHS';
+  src: url('../fonts/TelegHPLHS.woff') format('woff'),
+  url('../fonts/TelegHPLHS.svg#Telegram-HPLHS') format('svg');
+}
+
+/***************************/
+
 body {
   margin:0px;
   padding:0px;
   background:#fff;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+p {
+  line-height: 1.4em;
+  font-size: 1.2em;
+}
+
+p.copy {
+  padding-right: 30%;
 }
 
 article {
@@ -35,11 +130,11 @@ section.active {
 section.active a { color:#eee; }
 section.active small { color:#aaa; }
 
-h1 { font-family: 'Arvo', Georgia, Times, serif; font-size:2em; line-height:1em; }
-h2 { font-family: 'Arvo', Georgia, Times, serif; font-size:1.3333em; }
+h1 { font-family: 'HeadlineTwo-HPLHS', Georgia, Times, serif; font-size:2.0em; letter-spacing: 0.12em; line-height:1em; font-weight: normal; }
+h2 { font-family: 'HeadlineOne-HPLHS', Georgia, Times, serif; font-size:1.8em; letter-spacing: 0.10em; font-weight: normal; }
 h1,h2 { margin:0px 0px 10px; }
-h4 { font-family: 'PT Sans', Helvetica, Arial, sans-serif; margin:0px; font-size:0.8em;}
-p { font-family: 'PT Sans', Helvetica, Arial, sans-serif; margin:0px; }
+h4 { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px; font-size:0.8em; }
+body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px; }
 
 .scroll {
   position:absolute;
@@ -49,6 +144,9 @@ p { font-family: 'PT Sans', Helvetica, Arial, sans-serif; margin:0px; }
   padding:5px 10px;
 }
 
+.typewriter {
+  font-family: 'Telegram-HPLHS', Georgia, Times, serif;
+}
 .colophon {
   display:block;
   margin-top:10px;
