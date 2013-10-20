@@ -1,43 +1,56 @@
-// the geojson coordinates of the locations
+// // the geojson coordinates of the locations
+// var geojson = [
+//   { "geometry": { "type": "Point", "coordinates": [-120.4657, 40.5695] },
+//     "properties": { "name": "burlington", "zoom": 5 } },
+//   { "geometry": { "type": "Point", "coordinates": [-118.5140, 34.8576] },
+//     "properties": { "name": "union-station" } },
+//   { "geometry": { "type": "Point", "coordinates": [-118.2108, 36.4425] },
+//     "properties": { "name": "howard-opera-house" } },
+//   { "geometry": { "type": "Point", "coordinates": [-119.3500, 37.8763] },
+//     "properties": { "name": "masonic-temple" } },
+//   { "geometry": { "type": "Point", "coordinates": [-121.5222, 40.9253] },
+//     "properties": { "name": "steamboat-wharf" } },
+//   { "geometry": { "type": "Point", "coordinates": [-122.0800, 41.1411] },
+//     "properties": { "name": "pneumatic-tube-terminus" } },
+//   { "geometry": { "type": "Point", "coordinates": [-122.2004, 42.9729] },
+//     "properties": { "name": "battery-park" } },
+//   { "geometry": { "type": "Point", "coordinates": [-121.4240, 46.5427] },
+//     "properties": { "name": "northern-lake" } },
+//   { "geometry": { "type": "Point", "coordinates": [-121.4240, 46.5427] },
+//     "properties": { "name": "juniper-island" } },
+//   { "geometry": { "type": "Point", "coordinates": [-121.4240, 46.5427] },
+//     "properties": { "name": "southern-lake" } },
+//   { "geometry": { "type": "Point", "coordinates": [-121.4240, 46.5427] },
+//     "properties": { "name": "crescent-beach-country-club" } },
+//   { "geometry": { "type": "Point", "coordinates": [-121.4240, 46.5427] },
+//     "properties": { "name": "city-hall" } },
+//   { "geometry": { "type": "Point", "coordinates": [-120.4657, 40.5695] },
+//     "properties": { "name": "fin", "zoom": 5 } },
+// ];
+
 var geojson = [
-  { "geometry": { "type": "Point", "coordinates": [-120.4657, 40.5695] },
-    "properties": { "name": "burlington", "zoom": 5 } },
-  { "geometry": { "type": "Point", "coordinates": [-118.5140, 34.8576] },
-    "properties": { "name": "union-station" } },
-  { "geometry": { "type": "Point", "coordinates": [-118.2108, 36.4425] },
-    "properties": { "name": "howard-opera-house" } },
-  { "geometry": { "type": "Point", "coordinates": [-119.3500, 37.8763] },
-    "properties": { "name": "masonic-temple" } },
-  { "geometry": { "type": "Point", "coordinates": [-121.5222, 40.9253] },
-    "properties": { "name": "steamboat-wharf" } },
-  { "geometry": { "type": "Point", "coordinates": [-122.0800, 41.1411] },
-    "properties": { "name": "pneumatic-tube-terminus" } },
-  { "geometry": { "type": "Point", "coordinates": [-122.2004, 42.9729] },
-    "properties": { "name": "battery-park" } },
-  { "geometry": { "type": "Point", "coordinates": [-121.4240, 46.5427] },
-    "properties": { "name": "northern-lake" } },
-  { "geometry": { "type": "Point", "coordinates": [-121.4240, 46.5427] },
-    "properties": { "name": "juniper-island" } },
-  { "geometry": { "type": "Point", "coordinates": [-121.4240, 46.5427] },
-    "properties": { "name": "southern-lake" } },
-  { "geometry": { "type": "Point", "coordinates": [-121.4240, 46.5427] },
-    "properties": { "name": "crescent-beach-country-club" } },
-  { "geometry": { "type": "Point", "coordinates": [-121.4240, 46.5427] },
-    "properties": { "name": "city-hall" } },
-  { "geometry": { "type": "Point", "coordinates": [-120.4657, 40.5695] },
-    "properties": { "name": "fin", "zoom": 5 } },
+{"properties":{"name":"pneumatic-tube-terminus","fullname":"Queen City Pneumatic Terminus","zoom":20},"geometry":{"type":"Point","coordinates":[-73.21471452713013,44.467371477963596]}},
+{"properties":{"name":"howard-opera-house","fullname":"Howard Opera House","zoom":20},"geometry":{"type":"Point","coordinates":[-73.21322321891785,44.47801322108592]}},
+{"properties":{"name":"masonic-temple","fullname":"Masonic Temple","zoom":20},"geometry":{"type":"Point","coordinates":[-73.2130515575409,44.48023319621741]}},
+{"properties":{"name":"city-hall","fullname":"City Hall","zoom":19},"geometry":{"type":"Point","coordinates":[-73.21285843849182,44.47632139022349]}},
+{"properties":{"name":"juniper-island","fullname":"Juniper Island","zoom":15},"geometry":{"type":"Point","coordinates":[-73.27657699584961,44.45057041820037]}},
+{"properties":{"name":"crescent-beach-country-club","fullname":"Crescent Beach Country Club","zoom":16},"geometry":{"type":"Point","coordinates":[-73.22370529174805,44.45764675005933]}},
+{"properties":{"name":"steamboat-wharf","fullname":"Steamboat Wharf","zoom":16},"geometry":{"type":"Point","coordinates":[-73.22091579437256,44.47341990093129]}},
+{"properties":{"name":"union-station","fullname":"Union Station","zoom":19},"geometry":{"type":"Point","coordinates":[-73.21948885917664,44.47570895066971]}},
+{"properties":{"name":"battery-park","fullname":"Battery Park","zoom":19},"geometry":{"type":"Point","coordinates":[-73.21960687637329,44.48060063222989]}},
+{"properties":{"name":"northern-lake","fullname":"Lake Champlain North of Juniper Island","zoom":15},"geometry":{"type":"Point","coordinates":[-73.25700759887695,44.47421610232863]}},
+{"properties":{"name":"southern-lake","fullname":"Lake Champlain South of Juniper Island","zoom":15},"geometry":{"type":"Point","coordinates":[-73.25082778930664,44.44897735945844]}},
+{"properties":{"name":"burlington","fullname":"Burlington","zoom":13},"geometry":{"type":"Point","coordinates":[-73.21512222290038,44.47556349533111]}}
 ];
 
+//var geojson = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"pneumatic-tube-terminus","fullname":"Queen City Pneumatic Terminus","zoom":20},"geometry":{"type":"Point","coordinates":[-73.21471452713013,44.467371477963596]}},{"type":"Feature","properties":{"name":"howard-opera-house","fullname":"Howard Opera House","zoom":20},"geometry":{"type":"Point","coordinates":[-73.21322321891785,44.47801322108592]}},{"type":"Feature","properties":{"name":"masonic-temple","fullname":"Masonic Temple","zoom":20},"geometry":{"type":"Point","coordinates":[-73.2130515575409,44.48023319621741]}},{"type":"Feature","properties":{"name":"city-hall","fullname":"City Hall","zoom":19},"geometry":{"type":"Point","coordinates":[-73.21285843849182,44.47632139022349]}},{"type":"Feature","properties":{"name":"juniper-island","fullname":"Juniper Island","zoom":15},"geometry":{"type":"Point","coordinates":[-73.27657699584961,44.45057041820037]}},{"type":"Feature","properties":{"name":"crescent-beach-country-club","fullname":"Crescent Beach Country Club","zoom":16},"geometry":{"type":"Point","coordinates":[-73.22370529174805,44.45764675005933]}},{"type":"Feature","properties":{"name":"steamboat-wharf","fullname":"Steamboat Wharf","zoom":16},"geometry":{"type":"Point","coordinates":[-73.22091579437256,44.47341990093129]}},{"type":"Feature","properties":{"name":"union-station","fullname":"Union Station","zoom":19},"geometry":{"type":"Point","coordinates":[-73.21948885917664,44.47570895066971]}},{"type":"Feature","properties":{"name":"battery-park","fullname":"Battery Park","zoom":19},"geometry":{"type":"Point","coordinates":[-73.21960687637329,44.48060063222989]}},{"type":"Feature","properties":{"name":"northern-lake","fullname":"Lake Champlain North of Juniper Island","zoom":15},"geometry":{"type":"Point","coordinates":[-73.25700759887695,44.47421610232863]}},{"type":"Feature","properties":{"name":"southern-lake","fullname":"Lake Champlain, South of Juniper Islan","zoom":15},"geometry":{"type":"Point","coordinates":[-73.25082778930664,44.44897735945844]}},{"type":"Feature","properties":{"name":"burlington","fullname":"Burlington","zoom":13},"geometry":{"type":"Point","coordinates":[-73.21512222290038,44.47556349533111]}}]}
+
 var tiles = mapbox.layer().tilejson({
-  tiles: [ "https://s3.amazonaws.com/geosprocket-basemap/{z}/{x}/{y}.png" ]
-});
-
-var pct = mapbox.layer().tilejson({
   tiles: [ "http://c.tiles.mapbox.com/v3/landplanner.map-clhq1tp6/{z}/{x}/{y}.png" ]
 });
 
-var reference = mapbox.layer().tilejson({
-  tiles: [ "http://c.tiles.mapbox.com/v3/landplanner.map-clhq1tp6/{z}/{x}/{y}.png" ]
+var sanborn = mapbox.layer().tilejson({
+  tiles: [ "http://tiles.mapbox.com/v3/landplanner.sanborn-1894/{z}/{x}/{y}.png" ]
 });
 
 var spots = mapbox.markers.layer()
@@ -47,13 +60,13 @@ var spots = mapbox.markers.layer()
   // DOM element that represents the point.
   .factory(function(f) {
     var el = document.createElement('div');
-    el.className = 'spot spot-' + f.properties.id;
+    el.className = 'spot spot-' + f.properties.name;
     return el;
   });
 
 // Creates the map with tile and marker layers and
 // no input handlers (mouse drag, scrollwheel, etc).
-var map = mapbox.map('map', [tiles, pct, reference, spots], null, []);
+var map = mapbox.map('map', [tiles, sanborn, spots], null, []);
 
 // Array of story section elements.
 var sections = $('.card');
@@ -70,8 +83,6 @@ var markers = _(sections).map(function(section) {
   });
 });
 
-console.log(markers.length);
-
 // create a section cache
 var previousSection = sections[0]
 
@@ -79,7 +90,10 @@ var previousSection = sections[0]
 var setActive = function(index, ease) {
   // Set active class on sections, markers.
   _(sections).each(function(s) { s.className = s.className.replace(' active', '') });
-  _(markers).each(function(m) { m.element.className = m.element.className.replace(' active', '') });
+  _(markers).each(function(m) {
+    m.element.className = m.element.className.replace(' active', '');
+  });
+
   sections[index].className += ' active';
   markers[index].element.className += ' active';
 
@@ -88,9 +102,11 @@ var setActive = function(index, ease) {
 
   // Ease map to active marker.
   if (!ease) {
-    map.centerzoom(markers[index].location, markers[index].data.properties.zoom||7);
+    map.centerzoom(markers[index].location, markers[index].data.properties.zoom||13);
   } else {
-    map.ease.location(markers[index].location).zoom(markers[index].data.properties.zoom||7).optimal(0.5, 1.00);
+    // original
+    //map.ease.location(markers[index].location).zoom(markers[index].data.properties.zoom||13).optimal(0.5, 1.00);
+    map.ease.location(markers[index].location).zoom(markers[index].data.properties.zoom||13).optimal(1.2, 1.4);
   }
 
   // in setActive() we need to see if there is audio in that section

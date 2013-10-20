@@ -111,6 +111,8 @@ h1,h2 { margin:0px 0px 10px; }
 h4 { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px; font-size:0.8em; }
 body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px; }
 
+.italic { font-family: "LyonsItalic"; }
+
 .scroll {
   position:absolute;
   right:0px; bottom:0px;
@@ -153,22 +155,11 @@ body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px;
   position:absolute;
 }
 
-.spot-cover { display:none; }
-.spot-mojave { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
-.spot-mojave.active { background:url(../images/hiker.png) no-repeat; }
-.spot-meadows { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
-.spot-meadows.active { background:url(../images/hiker.png) no-repeat; }
-.spot-mirror { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
-.spot-mirror.active { background:url(../images/hiker.png) no-repeat; }
-.spot-cassel { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
-.spot-cassel.active { background:url(../images/hiker.png) no-repeat; }
-.spot-mccloud { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
-.spot-mccloud.active { background:url(../images/hiker.png) no-repeat; }
-.spot-crater { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
-.spot-crater.active { background:url(../images/hiker.png) no-repeat; }
-.spot-goatrocks { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
-.spot-goatrocks.active { background:url(../images/hiker.png) no-repeat; }
+/*.spot { background:url(../images/marker.png) no-repeat; }*/
+.spot.active { background:url(../images/marker.png) no-repeat; }
 
+.spot-cover { display:none; }
+.spot-burlington { display:none; }
 
 
 /************* CARD STYLES *************/
@@ -233,6 +224,22 @@ body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px;
 /* Distinguish the "cover page" visually other sections. */
 body.section-0 #map { opacity:0.5; }
 
+@media (max-width:767px) {
+  #map {
+    display: none;
+  }
+  article {
+    width: 100%;
+  }
+  p {
+    line-height: 1.4em;
+    font-size: 1.0em;
+  }
+
+  p.copy {
+    padding-right: 10%;
+  }
+}
 /*@media (max-width:640px) {
   body {
     font-size:12px;
