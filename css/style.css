@@ -116,10 +116,11 @@ body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px;
 
 .scroll {
   position:absolute;
-  left:48%px; bottom:0px;
+  left:0; bottom:0px;
+  width: 100%;
   font-size:12px;
   text-transform:uppercase;
-  padding: 10px 10px;
+  padding-bottom: 10px;
 }
 
 .typewriter {
