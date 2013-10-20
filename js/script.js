@@ -22,10 +22,10 @@ var tiles = mapbox.layer().tilejson({
 });
 
 var sanborn = mapbox.layer().tilejson({
-  //tiles: [ "http://tiles.mapbox.com/v3/landplanner.sanborn-1894/{z}/{x}/{y}.png" ]
+  tiles: [ "http://tiles.mapbox.com/v3/landplanner.sanborn-1894/{z}/{x}/{y}.png" ]
 //  tiles: [ "http://tile.stamen.com/toner/{z}/{x}/{y}.png" ]
   // tiles: [ "http://tiles.mapbox.com/v3/brettchalupa.map-dnpsh1y1/{z}/{x}/{y}.png" ]
-  tiles: [ "http://a.tiles.mapbox.com/v3/gahlord.bm/{z}/{x}/{y}.png" ]
+  //tiles: [ "http://a.tiles.mapbox.com/v3/gahlord.bm/{z}/{x}/{y}.png" ]
   //tiles: [ "https://s3.amazonaws.com/btv-1894/{z}/{x}/{y}.png" ]
 
 });
