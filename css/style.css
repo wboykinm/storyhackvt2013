@@ -116,10 +116,10 @@ body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px;
 
 .scroll {
   position:absolute;
-  right:0px; bottom:0px;
-  font-size:10px;
+  left:48%px; bottom:0px;
+  font-size:12px;
   text-transform:uppercase;
-  padding:5px 10px;
+  padding: 10px 10px;
 }
 
 .typewriter {
@@ -223,6 +223,13 @@ body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px;
 ul {
   padding: 0;
 }
+
+#section-2 ul li {
+  list-style: none;
+  padding-left: 24px;
+  padding-bottom: 8px;
+}
+
 #fin .content ul li {
   list-style: none;
 }
