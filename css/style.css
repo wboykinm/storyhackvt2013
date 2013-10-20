@@ -230,6 +230,28 @@ ul {
 /* Distinguish the "cover page" visually other sections. */
 body.section-0 #map { opacity:0.5; }
 
+@media (min-device-width : 768px) and (max-device-width : 1024px) {
+  p.copy {
+    padding-right: 10%;
+  }
+}
+@media (max-width:767px) {
+  #map {
+    display: none;
+  }
+  article {
+    width: 100%;
+  }
+  p {
+    line-height: 1.4em;
+    font-size: 1.0em;
+  }
+
+  p.copy {
+    padding-right: 10px;
+  }
+}
+
 @media (max-width:767px) {
   #map {
     display: none;
