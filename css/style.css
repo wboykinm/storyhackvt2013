@@ -266,6 +266,7 @@ body.section-0 #map { opacity:0.5; }
   }
   article {
     width: 100%;
+    padding: 40px 10px;
   }
   p {
     line-height: 1.4em;
