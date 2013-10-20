@@ -51,7 +51,7 @@ var markers = _(sections).map(function(section) {
   });
 });
 
-// create a section cache
+// create a section cache2
 var previousSection = sections[0]
 
 // Helper to set the active section.
@@ -64,6 +64,14 @@ var setActive = function(index, ease) {
 
   sections[index].className += ' active';
   markers[index].element.className += ' active';
+
+
+  // for (var i=0; i < markerLayer.markers().length; i++) {
+  //   if (markerLayer.markers()[i].data.properties.name === markers[index].data.properties.name) {
+  //     markerLayer.markers()[i].showTooltip();
+  //   }
+  // }
+
 
   // Set a body class for the active section.
   document.body.className = 'section-' + index;
@@ -80,10 +88,6 @@ var setActive = function(index, ease) {
   // in setActive() we need to see if there is audio in that section
   // if there is audio and it has not been played then play it
   // if it is currently playing then pause it
-  console.log("CURRENT SECTION");
-  console.log(sections[index].id);
-  console.log("PREVIOUS SECTION");
-  console.log(previousSection.id);
   var previousSectionAudios = $(previousSection).find("audio");
 
   _(previousSectionAudios).each(function(a) {
