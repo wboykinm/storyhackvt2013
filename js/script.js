@@ -103,7 +103,13 @@ var setActive = function(index, ease) {
   var audio = $(sections[index]).find("audio")[0];
   if (audio != undefined) {
     if (audio.currentTime == 0.0) {
-      audio.play();
+      var delay = $(audio).data("delay");
+
+      if (delay != undefined) {
+        setTimeout(function() { audio.play(); }, delay)
+      } else {
+        audio.play();
+      }
     }
   }
 
