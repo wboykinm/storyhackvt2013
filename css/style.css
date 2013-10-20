@@ -90,6 +90,21 @@ video {
   width: 100%;
 }
 
+img.portrait {
+  width: 30%;
+  display: inline-block;
+  padding: 20px;
+}
+
+img.portrait.left {
+  float: left;
+}
+
+img.portrait.right {
+  float: right;
+}
+
+
 p {
   line-height: 1.4em;
   font-size: 1.4em;
@@ -233,6 +248,12 @@ ul {
   list-style: none;
   padding-left: 24px;
   padding-bottom: 8px;
+  font-size: 1.4em;
+}
+
+#section-5 .section-image,
+#section-4 .section-image {
+  width: 30%;
 }
 
 #fin .content ul li {
@@ -262,22 +283,8 @@ body.section-0 #map { opacity:0.5; }
   p.copy {
     padding-right: 10px;
   }
-}
-
-@media (max-width:767px) {
-  #map {
-    display: none;
-  }
-  article {
-    width: 100%;
-  }
-  p {
-    line-height: 1.4em;
-    font-size: 1.0em;
-  }
-
-  p.copy {
-    padding-right: 10px;
+  #section-5.section-image {
+    width: 80%;
   }
 }
 /*@media (max-width:640px) {
