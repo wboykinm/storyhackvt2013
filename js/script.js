@@ -14,7 +14,7 @@ var geojson = [
 ];
 
 var tiles = mapbox.layer().tilejson({
-  tiles: [ "http://c.tiles.mapbox.com/v3/landplanner.map-clhq1tp6/{z}/{x}/{y}.png" ]
+  tiles: [ "https://s3.amazonaws.com/geosprocket/tiles/btv-1894/{z}/{x}/{y}.png" ]
 });
 
 var sanborn = mapbox.layer().tilejson({
