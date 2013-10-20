@@ -156,7 +156,9 @@ body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px;
 }
 
 /*.spot { background:url(../images/marker.png) no-repeat; }*/
-.spot.active { background:url(../images/marker.png) no-repeat; }
+.spot.active {
+  background:url(../images/marker.png) no-repeat;
+}
 
 .spot-cover { display:none; }
 .spot-burlington { display:none; }
@@ -167,9 +169,9 @@ body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px;
 .card {
   padding:40px;
   position:relative;
-  transition:background 500ms, color 500ms;
-  -moz-transition:background 500ms, color 500ms;
-  -webkit-transition:background 500ms, color 500ms;
+  transition: opacity .20s ease-in-out;
+  -moz-transition: opacity .20s ease-in-out;
+  -webkit-transition: opacity .20s ease-in-out;
 }
 
 .card,
