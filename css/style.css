@@ -106,13 +106,17 @@ article {
 }
 
 h1 { font-family: 'HeadlineTwo-HPLHS', Georgia, Times, serif; font-size:2.0em; letter-spacing: 0.12em; line-height:1em; font-weight: normal; }
-h2 { font-family: 'HeadlineOne-HPLHS', Georgia, Times, serif; font-size:1.6em; letter-spacing: 0.0em; font-weight: normal; }
+h2 { font-family: 'HeadlineOne-HPLHS', Georgia, Times, serif; font-size:1.6em; letter-spacing: 0.10em; font-weight: normal; }
 h1,h2 { margin:0px 0px 10px; }
 h3 { font-family: "LyonsItalic", Georgia, Times, serif; font-weight: normal; font-size: 1.6em;}
 h4 { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px; font-size:0.8em; }
 body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px; }
 
 .italic { font-family: "LyonsItalic"; }
+
+h2.italic {
+  letter-spacing: 0.0em;
+}
 
 .scroll {
   position:absolute;
