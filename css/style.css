@@ -178,7 +178,7 @@ h2.italic {
 
 /*.spot { background:url(../images/marker.png) no-repeat; }*/
 .spot.active {
-  background:url(../images/markery.png) no-repeat;
+  background:url(../images/marker.png) no-repeat;
 }
 
 .spot-cover { display:none; }

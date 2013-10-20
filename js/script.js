@@ -3,26 +3,31 @@ var geojson = [
 {"properties":{"name":"howard-opera-house","fullname":"Howard Opera House","zoom":20},"geometry":{"type":"Point","coordinates":[-73.21322321891785,44.47801322108592]}},
 {"properties":{"name":"masonic-temple","fullname":"Masonic Temple","zoom":20},"geometry":{"type":"Point","coordinates":[-73.2130515575409,44.48023319621741]}},
 {"properties":{"name":"city-hall","fullname":"City Hall","zoom":20},"geometry":{"type":"Point","coordinates":[-73.21285843849182,44.47632139022349]}},
-{"properties":{"name":"juniper-island","fullname":"Juniper Island","zoom":14},"geometry":{"type":"Point","coordinates":[-73.27657699584961,44.45057041820037]}},
+{"properties":{"name":"juniper-island","fullname":"Juniper Island","zoom":15},"geometry":{"type":"Point","coordinates":[-73.27657699584961,44.45057041820037]}},
 {"properties":{"name":"crescent-beach-country-club","fullname":"Crescent Beach Country Club","zoom":17},"geometry":{"type":"Point","coordinates":[-73.22370529174805,44.45764675005933]}},
 {"properties":{"name":"steamboat-wharf","fullname":"Steamboat Wharf","zoom":17},"geometry":{"type":"Point","coordinates":[-73.22091579437256,44.47341990093129]}},
 {"properties":{"name":"union-station","fullname":"Union Station","zoom":20},"geometry":{"type":"Point","coordinates":[-73.21948885917664,44.47570895066971]}},
 {"properties":{"name":"battery-park","fullname":"Battery Park","zoom":20},"geometry":{"type":"Point","coordinates":[-73.21960687637329,44.48060063222989]}},
-{"properties":{"name":"northern-lake","fullname":"Lake Champlain North of Juniper Island","zoom":13},"geometry":{"type":"Point","coordinates":[-73.25700759887695,44.47421610232863]}},
-{"properties":{"name":"southern-lake","fullname":"Lake Champlain South of Juniper Island","zoom":13},"geometry":{"type":"Point","coordinates":[-73.25082778930664,44.44897735945844]}},
+{"properties":{"name":"northern-lake","fullname":"Lake Champlain North of Juniper Island","zoom":15},"geometry":{"type":"Point","coordinates":[-73.25700759887695,44.47421610232863]}},
+{"properties":{"name":"southern-lake","fullname":"Lake Champlain South of Juniper Island","zoom":15},"geometry":{"type":"Point","coordinates":[-73.25082778930664,44.44897735945844]}},
 {"properties":{"name":"burlington","fullname":"Burlington","zoom":13},"geometry":{"type":"Point","coordinates":[-73.21512222290038,44.47556349533111]}}
 ];
 
 var tiles = mapbox.layer().tilejson({
   //tiles: [ "https://s3.amazonaws.com/geosprocket/tiles/btv-1894/{z}/{x}/{y}.png" ]
-  tiles: [ "http://tile.stamen.com/toner/{z}/{x}/{y}.png" ]
+  //tiles: [ "http://tile.stamen.com/toner/{z}/{x}/{y}.png" ]
   // tiles: [ "http://tiles.mapbox.com/v3/brettchalupa.map-dnpsh1y1/{z}/{x}/{y}.png" ]
+  tiles: [ "http://a.tiles.mapbox.com/v3/gahlord.bm/{z}/{x}/{y}.png" ]
+  //tiles: [ "https://s3.amazonaws.com/btv-1894/{z}/{x}/{y}.png" ]
 });
 
 var sanborn = mapbox.layer().tilejson({
   //tiles: [ "http://tiles.mapbox.com/v3/landplanner.sanborn-1894/{z}/{x}/{y}.png" ]
-  tiles: [ "http://tile.stamen.com/toner/{z}/{x}/{y}.png" ]
+//  tiles: [ "http://tile.stamen.com/toner/{z}/{x}/{y}.png" ]
   // tiles: [ "http://tiles.mapbox.com/v3/brettchalupa.map-dnpsh1y1/{z}/{x}/{y}.png" ]
+  tiles: [ "http://a.tiles.mapbox.com/v3/gahlord.bm/{z}/{x}/{y}.png" ]
+  //tiles: [ "https://s3.amazonaws.com/btv-1894/{z}/{x}/{y}.png" ]
+
 });
 
 var spots = mapbox.markers.layer()
