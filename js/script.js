@@ -44,6 +44,8 @@ var spots = mapbox.markers.layer()
 // Creates the map with tile and marker layers and
 // no input handlers (mouse drag, scrollwheel, etc).
 var map = mapbox.map('map', [tiles, sanborn, spots], null, []);
+map.setZoomRange(3, 20);
+        
 
 // Array of story section elements.
 var sections = $('.card');
