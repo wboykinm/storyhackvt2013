@@ -260,6 +260,11 @@ ul {
   list-style: none;
 }
 
+.citation {
+  display: block;
+  font-size: 0.8em;
+}
+
 /* Distinguish the "cover page" visually other sections. */
 body.section-0 #map { opacity:0.5; }
 
