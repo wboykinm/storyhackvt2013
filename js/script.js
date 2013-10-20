@@ -15,14 +15,14 @@ var geojson = [
 
 var tiles = mapbox.layer().tilejson({
   //tiles: [ "https://s3.amazonaws.com/geosprocket/tiles/btv-1894/{z}/{x}/{y}.png" ]
-  // tiles: [ "http://tile.stamen.com/toner/{z}/{x}/{y}.png" ]
-  tiles: [ "http://tiles.mapbox.com/v3/brettchalupa.map-dnpsh1y1/{z}/{x}/{y}.png" ]
+  tiles: [ "http://tile.stamen.com/toner/{z}/{x}/{y}.png" ]
+  // tiles: [ "http://tiles.mapbox.com/v3/brettchalupa.map-dnpsh1y1/{z}/{x}/{y}.png" ]
 });
 
 var sanborn = mapbox.layer().tilejson({
   //tiles: [ "http://tiles.mapbox.com/v3/landplanner.sanborn-1894/{z}/{x}/{y}.png" ]
-  //tiles: [ "http://tile.stamen.com/toner/{z}/{x}/{y}.png" ]
-  tiles: [ "http://tiles.mapbox.com/v3/brettchalupa.map-dnpsh1y1/{z}/{x}/{y}.png" ]
+  tiles: [ "http://tile.stamen.com/toner/{z}/{x}/{y}.png" ]
+  // tiles: [ "http://tiles.mapbox.com/v3/brettchalupa.map-dnpsh1y1/{z}/{x}/{y}.png" ]
 });
 
 var spots = mapbox.markers.layer()
