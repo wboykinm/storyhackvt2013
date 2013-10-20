@@ -158,7 +158,7 @@ body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px;
 
 /*.spot { background:url(../images/marker.png) no-repeat; }*/
 .spot.active {
-  background:url(../images/marker.png) no-repeat;
+  background:url(../images/markery.png) no-repeat;
 }
 
 .spot-cover { display:none; }
