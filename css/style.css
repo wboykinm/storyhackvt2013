@@ -92,7 +92,7 @@ video {
 
 p {
   line-height: 1.4em;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 p.copy {
@@ -104,31 +104,6 @@ article {
   min-width:320px;
   position:relative;
 }
-
-section {
-  padding:40px;
-  position:relative;
-  transition:background 500ms, color 500ms;
-  -moz-transition:background 500ms, color 500ms;
-  -webkit-transition:background 500ms, color 500ms;
-}
-
-section,
-section a {
-  color:#eeeeee;
-  background-color: #222222;
-  opacity: 0.8;
-  text-decoration:none;
-}
-
-section.active {
-  background-color: #222222;
-  color:#eeeeee;
-  opacity: 0.95;
-}
-
-section.active a { color:#eee; }
-section.active small { color:#aaa; }
 
 h1 { font-family: 'HeadlineTwo-HPLHS', Georgia, Times, serif; font-size:2.0em; letter-spacing: 0.12em; line-height:1em; font-weight: normal; }
 h2 { font-family: 'HeadlineOne-HPLHS', Georgia, Times, serif; font-size:1.8em; letter-spacing: 0.10em; font-weight: normal; }
@@ -150,18 +125,6 @@ body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px;
 .colophon {
   display:block;
   margin-top:10px;
-}
-
-.card .content {
-  padding: 150px 0;
-}
-
-#cover, #fin {
-  text-align: center;
-}
-
-#fin .content ul li {
-  list-style: none;
 }
 
 #pane {
@@ -206,10 +169,71 @@ body { font-family: 'OldStyle1-HPLHS', Helvetica, Arial, sans-serif; margin:0px;
 .spot-goatrocks { background:url(http://a.tiles.mapbox.com/v3/marker/pin-s-circle-stroked+9dc3d7.png) no-repeat; }
 .spot-goatrocks.active { background:url(../images/hiker.png) no-repeat; }
 
+
+
+/************* CARD STYLES *************/
+
+.card {
+  padding:40px;
+  position:relative;
+  transition:background 500ms, color 500ms;
+  -moz-transition:background 500ms, color 500ms;
+  -webkit-transition:background 500ms, color 500ms;
+}
+
+.card,
+.card a {
+  color:#fefefe;
+  background-color: #222222;
+  opacity: 0.8;
+  text-decoration:none;
+}
+
+.card.active {
+  background-color: #222222;
+  color:#fefefe;
+  opacity: 0.95;
+}
+
+.card.active a { color:#eee; }
+.card.active small { color:#aaa; }
+
+.card.inventor {
+  border-left: 18px solid #e9e198;
+}
+
+.card.pilot {
+  border-left: 18px solid #e2bdbd;
+}
+
+.card.stewardess {
+  border-left: 18px solid #b5d2d3;
+}
+
+.card.pilot.stewardess {
+  border-left: 18px solid #993D3D;
+}
+
+.card.investors {
+  border-left: 18px solid #85FFAD;
+}
+
+.card .content {
+  padding: 150px 0;
+}
+
+#cover, #fin {
+  text-align: center;
+}
+
+#fin .content ul li {
+  list-style: none;
+}
+
 /* Distinguish the "cover page" visually other sections. */
 body.section-0 #map { opacity:0.5; }
 
-@media (max-width:640px) {
+/*@media (max-width:640px) {
   body {
     font-size:12px;
     line-height:16px;
@@ -237,10 +261,5 @@ body.section-0 #map { opacity:0.5; }
     height:150%;
     }
   }
-
-@media (min-width:1280px) {
-  body {
-    font-size:18px;
-    line-height:24px;
-    }
-  }
+}
+*/
