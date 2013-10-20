@@ -164,10 +164,9 @@ $(document).ready( function(){
     var fin_content_height = $(".fin .content").height();
     $(".cover").css("height", browser_height - section_padding * 2);
     $(".cover").css("width", browser_width - section_padding * 2);
-    $(".fin").css("height", browser_height - section_padding * 2);
     $(".fin").css("width", browser_width - section_padding * 2);
     $(".cover .content").css("padding", browser_height / 2 - cover_content_height / 2 + "px 0");
-    $(".fin .content").css("padding", browser_height / 2 - fin_content_height + "px 0");
+    // $(".fin .content").css("padding", browser_height / 2 - fin_content_height + "px 0");
   }
 
   setCoverSize();
